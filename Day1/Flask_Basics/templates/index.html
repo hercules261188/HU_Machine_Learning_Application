@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome to ML Apps Training Day-2</h1>
+    <ul>
+        <li>Python</li>
+        <li>Flask</li>
+        <li>Machine Learning Apps</li>
+    </ul>
+    <img src="../static/python.png" width="100" height="100">
+    <br>
+    <h1>My name is {{name}}.</h1>
+    <h1>List : {{l1}}</h1>
+    <h1>D1 : {{d1["name"]}}</h1>
+
+    <h1>Custom Buttons</h1>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+
+    <h1>ML List-2</h1>
+    <ul>
+        {%for name in l2%}
+            <li>{{name}}</li>
+        {%endfor%}
+    </ul>
+
+    <h1>For if-else Condition</h1>
+    {%if 'Vishwajeet' in l2%}
+        <p>We have found the Item.</p>
+    {%else%}
+        <p>Item not found.</p>
+    {%endif%}
+
+{% endblock %}

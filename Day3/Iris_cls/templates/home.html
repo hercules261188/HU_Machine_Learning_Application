@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Flower Detection</title>
+</head>
+<body bgcolor=#d4a3ae>
+
+    <center>
+        <h1>Iris Flower Detection</h1>
+
+    <form action="{{url_for('after')}}" method="post">
+        <b> First value : <input type="text" name="a" placeholder="Enter 1"><br><br>
+            Second value : <input type="text" name="b" placeholder="Enter 2"><br><br>
+            Third value : <input type="text" name="c" placeholder="Enter 3"><br><br>
+            Fourth value : <input type="text" name="d" placeholder="Enter 4"><br><br><br></b>
+            <input type="submit" value="predict">
+    </form>
+    <br>
+    <img src="../static/flower1.jpg" alt="">
+    </center>
+    
+</body>
+</html>
